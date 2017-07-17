@@ -7,7 +7,7 @@ package types
 import (
         "encoding/json"
 
-        "github.com/Juniper/contrail-go-api"
+        "github.com/aniketgawade/contrail-go-api"
 )
 
 const (

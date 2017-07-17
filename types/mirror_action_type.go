@@ -11,7 +11,7 @@ type MirrorActionType struct {
 	AnalyzerMacAddress string `json:"analyzer_mac_address,omitempty"`
 	RoutingInstance string `json:"routing_instance,omitempty"`
 	UdpPort int `json:"udp_port,omitempty"`
-	JuniperHeader bool `json:"juniper_header,omitempty"`
+	aniketgawadeHeader bool `json:"juniper_header,omitempty"`
 	NhMode string `json:"nh_mode,omitempty"`
 	StaticNhHeader *StaticMirrorNhType `json:"static_nh_header,omitempty"`
 	NicAssistedMirroring bool `json:"nic_assisted_mirroring,omitempty"`

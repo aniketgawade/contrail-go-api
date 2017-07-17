@@ -4,7 +4,7 @@ package types
 import (
         "reflect"
 
-        "github.com/Juniper/contrail-go-api"
+        "github.com/aniketgawade/contrail-go-api"
 )
 
 var (

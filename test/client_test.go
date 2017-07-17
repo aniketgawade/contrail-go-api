@@ -2,9 +2,9 @@ package contrail_test
 
 import (
 	"fmt"
-	"github.com/Juniper/contrail-go-api"
-	"github.com/Juniper/contrail-go-api/mocks"
-	"github.com/Juniper/contrail-go-api/types"
+	"github.com/aniketgawade/contrail-go-api"
+	"github.com/aniketgawade/contrail-go-api/mocks"
+	"github.com/aniketgawade/contrail-go-api/types"
 	"testing"
 )
 

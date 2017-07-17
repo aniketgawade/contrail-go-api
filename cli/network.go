@@ -12,9 +12,9 @@ import (
 	"text/tabwriter"
 	"text/template"
 
-	"github.com/Juniper/contrail-go-api"
-	"github.com/Juniper/contrail-go-api/config"
-	"github.com/Juniper/contrail-go-api/types"
+	"github.com/aniketgawade/contrail-go-api"
+	"github.com/aniketgawade/contrail-go-api/config"
+	"github.com/aniketgawade/contrail-go-api/types"
 )
 
 type networkCommonOptions struct {
