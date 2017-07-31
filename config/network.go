@@ -164,7 +164,7 @@ func networkAddSubnet(
 
 
 func CreateNetworkWithSubnet(
-client contrail.ApiClient, project_id, name, prefix string) (
+client contrail.ApiClient, project_id, name, uuid, prefix string, gateway string) (
 string, error) {
 
 	obj, err := client.FindByUuid("project", project_id)
@@ -177,11 +177,13 @@ string, error) {
 	net := new(types.VirtualNetwork)
 	net.SetParent(project)
 	net.SetName(name)
+        net.SetUuid(uuid)
 
 	subnet, err := makeSubnet(prefix)
 	if err != nil {
 		return "", err
 	}
+        subnet.DefaultGateway = gateway
 	err = networkAddSubnet(client, project, net, subnet, nil)
 	if err != nil {
 		return "", err
